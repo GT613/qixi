@@ -1,0 +1,14 @@
+/* Clearer opening image with a focused title veil. */
+.gate::before{inset:-3%;filter:blur(3.5px) saturate(1.12) brightness(.86);transform:scale(1.035)}
+.gate::after{background:linear-gradient(180deg,rgba(42,17,2,.12),rgba(35,13,2,.4)),radial-gradient(ellipse at 50% 44%,rgba(35,12,1,.62) 0,rgba(43,16,2,.38) 34%,transparent 68%)}
+.gate-copy{padding:34px 42px;background:radial-gradient(ellipse at center,rgba(42,15,2,.34),transparent 72%);text-shadow:0 3px 26px rgba(22,6,0,.9),0 1px 3px rgba(22,6,0,.75)}
+.gate p{color:#fff8eb;font-weight:500}
+.gate span,.gate small{color:rgba(255,239,214,.78)}
+
+/* Final image sits in normal document flow and never overlaps the letter. */
+.final-family-image{position:relative;width:min(88vw,920px);margin:10vh auto 2vh;overflow:visible}
+.final-family-image::before{content:"";position:absolute;z-index:0;left:10%;right:10%;bottom:3%;height:16%;border-radius:50%;background:rgba(111,51,13,.18);filter:blur(28px)}
+.final-family-image img{position:relative;z-index:1;display:block;width:100%;height:auto;filter:drop-shadow(0 24px 36px rgba(94,42,10,.2))}
+.final-family-image+.final-wish{margin-top:16vh}
+@media(max-width:700px){.gate::before{inset:-4%;filter:blur(2.5px) saturate(1.14) brightness(.84);transform:scale(1.045);background-position:52% center}.gate::after{background:linear-gradient(180deg,rgba(42,17,2,.1),rgba(35,13,2,.44)),radial-gradient(ellipse at 50% 45%,rgba(34,11,1,.66),rgba(43,16,2,.34) 40%,transparent 72%)}.gate-copy{padding:26px 12px}.final-family-image{width:calc(100vw - 20px);margin:7vh calc(50% - 50vw + 10px) 0}.final-family-image img{filter:drop-shadow(0 18px 26px rgba(94,42,10,.18))}.final-family-image+.final-wish{margin-top:12vh}}
+@media(prefers-reduced-motion:reduce){.final-family-image img{filter:none}}

@@ -1,0 +1,24 @@
+:root{--ink:#211006;--ink2:#2c1609;--paper:#f5ddb8;--paper2:#efc98f;--text:#fff3df;--muted:rgba(255,235,207,.64);--gold:#e6a650}
+html,body{background:#211006}
+.gate{isolation:isolate;background:#2a1408;overflow:hidden}
+.gate::before{content:"";position:absolute;z-index:-2;inset:-7%;background:url("../assets/images/illustrated/hero-background.webp") center/cover no-repeat;filter:blur(12px) saturate(1.18) brightness(.72);transform:scale(1.07)}
+.gate::after{content:"";position:absolute;z-index:-1;inset:0;background:linear-gradient(180deg,rgba(50,23,5,.28),rgba(31,13,3,.68)),radial-gradient(circle at 50% 34%,rgba(255,174,55,.16),transparent 52%)}
+.gate-copy{position:relative;z-index:1;text-shadow:0 2px 22px rgba(31,12,2,.6)}
+.gate button{background:rgba(76,34,8,.24);border-color:rgba(255,224,182,.42);backdrop-filter:blur(8px)}
+.gate button:hover{border-color:#ffc66f;color:#fff9ee;background:rgba(122,60,15,.3)}
+.dark{background:linear-gradient(180deg,#211006 0%,#2b1508 52%,#1d0d05 100%)}
+.warm{background:linear-gradient(180deg,#4a240c 0%,#5a2d10 48%,#321707 100%)}
+.pale{background:linear-gradient(180deg,#f4d8ac 0%,#efc98d 52%,#f3d6a6 100%);color:#321a0c}
+.opening{background:radial-gradient(circle at 75% 24%,rgba(190,89,18,.23),transparent 34%),linear-gradient(180deg,#2a1408,#3d1d0b 46%,#211006)}
+.ordinary,.time-turn,.protect,.confession{background:radial-gradient(circle at 18% 18%,rgba(194,91,20,.12),transparent 32%),linear-gradient(180deg,#241106,#351908 54%,#1f0e05)}
+.messages{background:radial-gradient(circle at 78% 22%,rgba(255,168,64,.14),transparent 30%),linear-gradient(180deg,#51250c,#6a3211 48%,#361707)}
+.quote-card{border-color:rgba(235,166,80,.4);background:linear-gradient(145deg,#633014,#351707);color:#fff2df;box-shadow:0 24px 70px rgba(49,18,3,.3)}
+.quote-card small{color:rgba(255,224,188,.62)}
+.full-photo .shade{background:linear-gradient(180deg,rgba(71,31,6,.08),rgba(39,14,2,.82))}
+.finale{background:linear-gradient(180deg,#f3d7a8,#eebd78 58%,#f4d9ad);color:#3a1d0c}
+.sound{background:rgba(62,28,8,.58);border-color:rgba(255,213,157,.28)}
+.progress{background:rgba(255,208,144,.18)}
+.progress span{background:#f1a546}
+.grain{mix-blend-mode:overlay;opacity:.045}
+.photo{background:#3a1b09}
+@media(max-width:700px){.gate::before{inset:-10%;filter:blur(10px) saturate(1.2) brightness(.7)}.gate::after{background:linear-gradient(180deg,rgba(46,19,3,.24),rgba(33,13,2,.72)),radial-gradient(circle at 50% 38%,rgba(255,174,55,.18),transparent 56%)}.dark{background:linear-gradient(180deg,#211006,#331807 55%,#1f0e05)}.warm{background:linear-gradient(180deg,#47210b,#5a2b0e 52%,#321607)}}
